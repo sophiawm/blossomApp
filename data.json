@@ -13,6 +13,13 @@
         "task": "Meditation",
         "description": "Listen to guided audio",
         "group": "Habits"
+    },
+    {
+        "id": 3,
+        "checkbox":"checked",
+        "task": "Meditation",
+        "description": "Listen to guided audio",
+        "group": "Habits"
     }
 ]
 }
