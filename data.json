@@ -1,50 +1,34 @@
 {
-    "tasks": [
-        {
-        "id": 1,
-        "completed": false,
-        "text": "Work Out for 15 mins",
-        "description": "Jump the rope and run",
-        "dueDate": "24/08/2023",
-        "group": "Work"
-        },
-        {
-        "id": 2,
-        "completed": true,
-        "text": "Meditation",
-        "description": "Listen to guided audio",
-        "dueDate": "24/08/2023",
-        "group": "Habits"
-        },
-        {
-        "id": 3,
-        "completed": false,
-        "text": "Meditation",
-        "description": "Listen to guided audio",
-        "dueDate": "24/08/2023",
-        "group": "Work"
-        },
-        {
-        "id": 4,
-        "completed": true,
-        "text": "Coding practice",
-        "description": "Listen to tutorial audio CSS",
-        "dueDate": "24/08/2023",
-        "group": "Habits"
-        }
-    ],
-    "groups": [
-        {
-        "id": 1,
-        "groupTitle": "Habits",
-        "groupDescription": "Daily this to do",
-        "groupDueDate": "31/08/2023"
-        },
-        {
-        "id": 2,
-        "groupTitle": "Work",
-        "groupDescription": "Work this to do",
-        "groupDueDate": "31/08/2023"
-        }
-    ]
+  "tasks": [
+    {
+      "completed": false,
+      "text": "Organizar",
+      "description": "Organize and put things away",
+      "dueDate": "2023-08-17",
+      "group": "Organize Homework",
+      "id": 5
+    },
+    {
+      "completed": false,
+      "text": "Clean room",
+      "description": "Pick up after yourself",
+      "dueDate": "2023-08-23",
+      "group": "Organize Homework",
+      "id": 6
+    }
+  ],
+  "groups": [
+    {
+      "id": 1,
+      "groupTitle": "Habits",
+      "groupDescription": "Daily this to do",
+      "groupDueDate": "31/08/2023"
+    },
+    {
+      "id": 2,
+      "groupTitle": "Work",
+      "groupDescription": "Work this to do",
+      "groupDueDate": "31/08/2023"
+    }
+  ]
 }

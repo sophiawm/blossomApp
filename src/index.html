@@ -15,7 +15,7 @@
             <p>Hello, </p><p class="name-user-welcome">Sunshine</p>
         </div>
         <div class="nav-container" class="dropdown">
-            <button onclick="dropdownMenu()" class="dropbtn"><img src="../images/icons/toggle-icon.png" alt="Toggle Icon"></button>
+            <button onclick="dropdownMenu()" class="dropbtn"><img src="images/icons/toggle-icon.png" alt="Toggle Icon"></button>
             <ul id="myDropdown" class="dropdown-content">
                 <li><a href="/index-main.html">Today's Taks</a></li>
                 <li><a href="/groups-display.html">Groups</a></li>
@@ -25,6 +25,11 @@
             </ul>
         </div>
     </header>
+    <section class="phrases">
+        <button id="change-phrases" onclick="changePhrase()"><img src="images/icons/refresh-icon.png" alt="refresh-icon"></button>
+        <p id="phrases-text">You are always worthy</p>
+        <img id="top-flower-decoration" src="images/two-flowers.png" alt="two-flowers-decoration">
+    </section>
     <section class="todo-list">
         <h3 class="todays-title">Today's Tasks</h3>
         <div id="list-container">
@@ -43,7 +48,7 @@
                 <option value="Launch Website">Launch Website</option>
                 <option value="Organize Homework">Organize Homework</option>
             </select>
-            <button type="submit" onclick="createTask()" id="add-todo"> Add To Do</button>
+            <button type="submit" id="add-todo"> Add To Do</button>
         </form>
     </section>
     <script src="javascript/services.js"></script>
