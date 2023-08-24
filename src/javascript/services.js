@@ -1,6 +1,8 @@
 let taskList = document.getElementById("list-container");
 
 let taskForm = document.getElementById("new-todo-form");
+
+let inputId = document.getElementById("id-input-form");
 let textInput = document.getElementById("task-form");
 let descriptionInput = document.getElementById("description-form");
 let groupSelection = document.getElementById("group-options");
@@ -45,6 +47,7 @@ document.addEventListener("DOMContentLoaded", showTasks);
 
 //Create-post
 addToDoBotton.addEventListener("click", async () => {
+    let idInput = inputId.value
     let taskText = textInput.value;
     let taskDescripcion = descriptionInput.value;
     let dueDateSelected = dueDateInput.value;
@@ -57,6 +60,7 @@ addToDoBotton.addEventListener("click", async () => {
         "Content-Type": "application/json",
         },
         body: JSON.stringify({
+            id: idInput,
             completed: false,
             text: taskText,
             description: taskDescripcion, 
@@ -128,11 +132,15 @@ async function editTask(id){
     let result = await fetch(`http://localhost:3000/tasks/${id}`)
     let data = await result.json()
 
+    let hideContainerTask = document.getElementsByClassName("list-item-container");
 
-    inputTitle.value = data.title;
-    inputDescription.value = data.description;
     inputId.value = data.id;
-}
+    textInput.value = data.text;
+    descriptionInput.value = data.description;
+    dueDateInput = data.dueDate;
+    groupSelection.value = data.group;
+
+};
 
 async function updateCompletedTask(id, completed){
     let result = await fetch(`http://localhost:3000/tasks/${id}`, {
@@ -144,3 +152,5 @@ async function updateCompletedTask(id, completed){
                     completed})
     })
 }
+
+//data-bs-toggle="form" data-bs-target="#form"

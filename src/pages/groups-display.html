@@ -10,6 +10,7 @@
     <title>Blossom</title>
 </head>
 <body>
+<!-- Greeting & Header -->
     <header class="basic-header">
         <div class="greeting-name">
             <p>Hello, </p><p class="name-user-welcome">Sunshine</p>
@@ -17,7 +18,7 @@
         <div class="nav-container" class="dropdown">
             <button onclick="dropdownMenu()" class="dropbtn"><img src="images/icons/toggle-icon.png" alt="Toggle Icon"></button>
             <ul id="myDropdown" class="dropdown-content">
-                <li><a href="/index-main.html">Today's Taks</a></li>
+                <li><a href="../index-main.html">Today's Taks</a></li>
                 <li><a href="/groups-display.html">Groups</a></li>
                 <li><a href="#">Habits</a></l>
                 <li><a href="#">The Garden</a></li>
@@ -25,36 +26,43 @@
             </ul>
         </div>
     </header>
-    <section class="phrases">
-        <button id="change-phrases" onclick="changePhrase()"><img src="images/icons/refresh-icon.png" alt="refresh-icon"></button>
-        <p id="phrases-text">You are always worthy</p>
-        <img id="top-flower-decoration" src="images/two-flowers.png" alt="two-flowers-decoration">
-    </section>
-    <section class="todo-list">
-        <h3 class="todays-title">Today's Tasks</h3>
-        <div id="list-container">
-
-        </div>
-    </section>
-
-    <section class="create-todo">
-        <form id="new-todo-form">
-            <input id="id-input-form" type="hidden">
-            <input id="task-form" type="text" placeholder="¿What are you planning?" name="task-form" required /><p id="msg-task-form"></p>
-            <input id="description-form" type="text" placeholder="Write a description" name="description-form"/>
-            <input id="due-date-form" type="date">
-            <select id="group-options" class="group-selector">
-                <option value=" " disabled selected hidden>Select a group</option>
-                <option value="Today">Today</option>
-                <option value="Habits">Habits</option>
-                <option value="Organize Homework">Organize Homework</option>
-                <option value="Launch Website">Launch Website</option>
-                <option value="Work">Work</option>
-            </select>
-            <button type="submit" id="add-todo"> Add To Do</button>
-        </form>
-    </section>
-
+<!-- Groups display --> 
+<section id="groups-display-container">
+    <div id="group-information-container">
+    <h1 id="group-display-title">Homework</h1>
+    <p id="group-display-description">>Make logo for the mini project</p>
+    <p id="group-display-duedate">17/02/2023</p>
+    <button type="button" id="group-display-more">See more</button>
+    </div>
+</section>
+<!-- Create group -->  
+        <section class="create-todo">
+			<form id="new-group-form">
+                <input 
+                id="group-name-form"
+                type="text" 
+                placeholder="¿What's your next project?"
+                name="task"/> <p id="msg-group-form"></p>
+                <input 
+                id="group-description-form"
+                type="text" 
+                placeholder="Write a description"
+                name="description-group"/>
+                <input 
+                id="group-duedate-form"
+                type="date" 
+                placeholder="dd/mm"
+                name="due-group"/>
+				<input id="add-todo" type="submit" value="Add To Do" />
+            </form>
+		</section>
+    <!-- Select group -->
+    <select id="group-options" class="group-selector">
+        <option value="label">Select a group</option>
+        <option value="group 1">Launch Website</option>
+        <option value="group 2">Organize Homework</option>
+    </select>
+    <!-- Footer -->
     <footer clas="basic-footer">
         <div class="footer-logo-container">
             <img id="logo-footer" src="images/desktop-logo-footer.png" alt="Basic Logo for Footer">
@@ -70,7 +78,6 @@
             </div>
         </div>
     </footer>
-    <script src="javascript/services.js"></script>
-    <script src="javascript/menu.js"></script>
+    <script src="javascript/script-main.js"></script>
 </body>
 </html>
