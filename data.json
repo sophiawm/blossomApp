@@ -5,10 +5,14 @@
         "checkbox":"unchecked",
         "task": "Work Out for 15 mins",
         "description": "Jump the rope and run",
-        "group": [
-            {"title": "Habits", "description": "Everyday things to do", "dueDate": "22/12/2023"},
-            {"title": "Work", "description": "Tasks relate to my 9-to-5", "dueDate": "22/12/2023"},
-            {"title": "Art", "description": "Creating and exploring", "dueDate": "22/12/2023"},]
+        "group": "Habits"
+    },
+    {
+        "id": 2,
+        "checkbox":"unchecked",
+        "task": "Meditation",
+        "description": "Listen to guided audio",
+        "group": "Habits"
     }
 ]
 }
