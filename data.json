@@ -5,6 +5,7 @@
         "checkbox":"unchecked",
         "task": "Work Out for 15 mins",
         "description": "Jump the rope and run",
+        "dueDate":"24/08/2023",
         "group": "Habits"
     },
     {
@@ -12,6 +13,7 @@
         "checkbox":"unchecked",
         "task": "Meditation",
         "description": "Listen to guided audio",
+        "dueDate":"24/08/2023",
         "group": "Habits"
     },
     {
@@ -19,6 +21,7 @@
         "checkbox":"checked",
         "task": "Meditation",
         "description": "Listen to guided audio",
+        "dueDate":"24/08/2023",
         "group": "Habits"
     }
 ]
