@@ -30,22 +30,22 @@
         <div id="list-container">
 
         </div>
-        <button onclick="showTasks()">Show!</button>
     </section>
 
     <section class="create-todo">
         <form id="new-todo-form">
             <input id="task-form" type="text" placeholder="¿What are you planning?" name="task-form" required /><p id="msg-task-form"></p>
             <input id="description-form" type="text" placeholder="Write a description" name="description-form"/>
+            <input id="due-date-form" type="date">
             <select id="group-options" class="group-selector">
                 <option value=" " disabled selected hidden>Select a group</option>
                 <option value="Today">Today</option>
                 <option value="Launch Website">Launch Website</option>
                 <option value="Organize Homework">Organize Homework</option>
             </select>
-            <button type="submit" id="add-todo"> Add To Do</button>
+            <button type="submit" onclick="createTask()" id="add-todo"> Add To Do</button>
         </form>
     </section>
-
+    <script src="javascript/services.js"></script>
 </body>
 </html>

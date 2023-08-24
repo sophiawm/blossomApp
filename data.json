@@ -3,34 +3,48 @@
         {
         "id": 1,
         "completed": false,
-        "task": "Work Out for 15 mins",
+        "text": "Work Out for 15 mins",
         "description": "Jump the rope and run",
-        "dueDate": "2023-08-1T09:00:00Z",
-        "group": "Habits"
+        "dueDate": "24/08/2023",
+        "group": "Work"
         },
         {
         "id": 2,
         "completed": true,
-        "task": "Meditation",
+        "text": "Meditation",
         "description": "Listen to guided audio",
-        "dueDate": "2023-08-23T09:00:00Z",
+        "dueDate": "24/08/2023",
         "group": "Habits"
         },
         {
         "id": 3,
         "completed": false,
-        "task": "Meditation",
+        "text": "Meditation",
         "description": "Listen to guided audio",
-        "dueDate": "2023-08-1T09:00:00Z",
-        "group": "Habits"
+        "dueDate": "24/08/2023",
+        "group": "Work"
         },
         {
         "id": 4,
         "completed": true,
-        "task": "Coding practice",
+        "text": "Coding practice",
         "description": "Listen to tutorial audio CSS",
-        "dueDate": "2023-08-23T09:00:00Z",
+        "dueDate": "24/08/2023",
         "group": "Habits"
+        }
+    ],
+    "groups": [
+        {
+        "id": 1,
+        "groupTitle": "Habits",
+        "groupDescription": "Daily this to do",
+        "groupDueDate": "31/08/2023"
+        },
+        {
+        "id": 2,
+        "groupTitle": "Work",
+        "groupDescription": "Work this to do",
+        "groupDueDate": "31/08/2023"
         }
     ]
 }

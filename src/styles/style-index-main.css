@@ -261,11 +261,24 @@ body {
 	font-family: 'Work Sans';
 	font-size: 1rem;
 }
+.task-group-duedate{
+	display: inline-flex;
+	gap: 0rem;
+}
 #group-task-item{
 	border-radius: 0.3rem;
 	background-color: #FAD430;
 	padding: 0.3rem 0.5rem;
 	margin: 0.5rem 1rem 1rem;
+	font-size: 0.8rem;
+	color:#3B0F52;
+	width: fit-content;
+}
+#due-date-item{
+	border-radius: 0.3rem;
+	background-color: #FAD430;
+	padding: 0.3rem 0.5rem;
+	margin: 0.5rem 0rem 1rem;
 	font-size: 0.8rem;
 	color:#3B0F52;
 	width: fit-content;
@@ -299,7 +312,7 @@ body {
 	margin-top: 1rem;
 	padding-top: 0.2rem;
 }
-#new-todo-form input[type=text]{
+#new-todo-form input[type=text], #new-todo-form input[type=date]{
 	display: block;
 	border-radius: 0.625rem;
 	border: 1px solid #FFF;
@@ -326,7 +339,7 @@ body {
 	font-weight: 300;
 	color: #FFF;
 }
-#new-todo-form select{
+#new-todo-form select {
 	display: block;
 	border-radius: 0.625rem;
 	border: 1px solid #FAD430;
