@@ -1,28 +1,36 @@
 {
     "tasks": [
-    {
+        {
         "id": 1,
-        "checkbox":"unchecked",
+        "completed": false,
         "task": "Work Out for 15 mins",
         "description": "Jump the rope and run",
-        "dueDate":"24/08/2023",
+        "dueDate": "2023-08-1T09:00:00Z",
         "group": "Habits"
-    },
-    {
+        },
+        {
         "id": 2,
-        "checkbox":"unchecked",
+        "completed": true,
         "task": "Meditation",
         "description": "Listen to guided audio",
-        "dueDate":"24/08/2023",
+        "dueDate": "2023-08-23T09:00:00Z",
         "group": "Habits"
-    },
-    {
+        },
+        {
         "id": 3,
-        "checkbox":"checked",
+        "completed": false,
         "task": "Meditation",
         "description": "Listen to guided audio",
-        "dueDate":"24/08/2023",
+        "dueDate": "2023-08-1T09:00:00Z",
         "group": "Habits"
-    }
-]
+        },
+        {
+        "id": 4,
+        "completed": true,
+        "task": "Coding practice",
+        "description": "Listen to tutorial audio CSS",
+        "dueDate": "2023-08-23T09:00:00Z",
+        "group": "Habits"
+        }
+    ]
 }
