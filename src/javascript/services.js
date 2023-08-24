@@ -31,8 +31,8 @@ async function showTasks() {
                 </div>
             </div>
             <div id="todo-line-icons"> 
-                <img onclick="editTask(${task.id})" id="edit-icon" src="images/icons/edit-icon.png" alt="edit-icon">
-                <img onclick="removeTask(${task.id})" id="delete-icon" src="images/icons/delete-icon.png" alt="delete-icon">
+                <img onclick="editTask(${task.id})" id="edit-icon" src="../images/icons/edit-icon.png" alt="edit-icon">
+                <img onclick="removeTask(${task.id})" id="delete-icon" src="../images/icons/delete-icon.png" alt="delete-icon">
             </div>
         </div>`;
     });
