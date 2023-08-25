@@ -1,5 +1,5 @@
 # Blossom App
-<img src="/images/blossom-biglogo.png"> </br>
+<img src="images/blossom-biglogo.png"> </br>
 Welcome to Blossom, a delightful to-do list app that combines productivity with mindfulness and rewards. With Blossom, you can manage your tasks, nurture a virtual garden, and promote well-being—all in one place.
 
 ## Features
