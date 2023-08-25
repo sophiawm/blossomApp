@@ -1,0 +1,52 @@
+@media only screen and (min-width: 500px) {
+    body {
+        background-image:none;
+    }
+    }
+    @media only screen and (max-width: 500px) {
+    body {
+            background-image: none;
+    }
+    }
+
+.settings-container{
+    margin: 1.5rem 2rem 4rem;
+}
+#logo-big-logo{
+    width: 100%;
+    margin-bottom: 3rem;
+}
+.details-identification{
+    border-radius: 0.625rem;
+    background: #3B0F52;
+    margin-bottom: 3rem;
+    padding: 2rem 2rem 1rem;
+}
+.line-identification{
+    display: flex;
+    justify-content: space-between;
+    font-family: "Work Sans";
+    color: #FFF;
+    margin-bottom: 1.5rem;
+}
+.area-identification{
+    font-size: 1.125rem;
+    font-weight: 700;
+}
+.area-input{
+    text-align: right;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+}
+.button-log-out{
+    height: 3.6875rem;
+    width: 100%;
+    border-radius: 0.625rem;
+    background: #3B0F52;
+    color: #FFF;
+    font-family: "Work Sans";
+    font-size: 1.25rem;
+    font-weight: 800;
+    letter-spacing: 0.0125rem;
+}

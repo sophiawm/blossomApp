@@ -3,81 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style-index-main.css">
+    <link rel="stylesheet" href="../styles/style-index-main.css">
+    <link rel="stylesheet" href="../styles/style-groupdisplay.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <title>Blossom</title>
 </head>
 <body>
-<!-- Greeting & Header -->
     <header class="basic-header">
         <div class="greeting-name">
             <p>Hello, </p><p class="name-user-welcome">Sunshine</p>
         </div>
         <div class="nav-container" class="dropdown">
-            <button onclick="dropdownMenu()" class="dropbtn"><img src="images/icons/toggle-icon.png" alt="Toggle Icon"></button>
+            <button onclick="dropdownMenu()" class="dropbtn"><img src="../images/icons/toggle-icon.png" alt="Toggle Icon"></button>
             <ul id="myDropdown" class="dropdown-content">
-                <li><a href="../index-main.html">Today's Taks</a></li>
-                <li><a href="/groups-display.html">Groups</a></li>
-                <li><a href="#">Habits</a></l>
-                <li><a href="#">The Garden</a></li>
-                <li><a href="#">Setting</a></li>
+                <li><a href="../index.html">Today's Taks</a></li>
+                <li><a href="groups-display.html">Groups</a></li>
+                <li><a href="habits.html">Habits</a></l>
+                <li><a href="garden.html">The Garden</a></li>
+                <li><a href="settings.html">Setting</a></li>
             </ul>
         </div>
     </header>
-<!-- Groups display --> 
-<section id="groups-display-container">
-    <div id="group-information-container">
-    <h1 id="group-display-title">Homework</h1>
-    <p id="group-display-description">>Make logo for the mini project</p>
-    <p id="group-display-duedate">17/02/2023</p>
-    <button type="button" id="group-display-more">See more</button>
-    </div>
-</section>
-<!-- Create group -->  
-        <section class="create-todo">
-			<form id="new-group-form">
-                <input 
-                id="group-name-form"
-                type="text" 
-                placeholder="¿What's your next project?"
-                name="task"/> <p id="msg-group-form"></p>
-                <input 
-                id="group-description-form"
-                type="text" 
-                placeholder="Write a description"
-                name="description-group"/>
-                <input 
-                id="group-duedate-form"
-                type="date" 
-                placeholder="dd/mm"
-                name="due-group"/>
-				<input id="add-todo" type="submit" value="Add To Do" />
-            </form>
-		</section>
-    <!-- Select group -->
-    <select id="group-options" class="group-selector">
-        <option value="label">Select a group</option>
-        <option value="group 1">Launch Website</option>
-        <option value="group 2">Organize Homework</option>
-    </select>
-    <!-- Footer -->
+    
+    <section class="groups-display-container">
+        <div class="group-container">
+            <h2 class="group-title">Habits</h2>
+            <p class="group-description">Basics to get by daily</p>
+            <div class="seemore-button-container">
+                <a href="habits.html"><button type="button" class="see-more-button">See More</button></a>
+                <img id="flower-illustration" src="../images/flower.png" alt="Flower illustration">
+            </div>
+        </div>
+        <div class="group-container">
+            <h2 class="group-title">Organize Homework</h2>
+            <p class="group-description">Sort by subject and update it</p>
+            <div class="seemore-button-container">
+                <a href="group-list.html"><button type="button" class="see-more-button">See More</button></a>
+                <img id="flower-illustration" src="../images/flower.png" alt="Flower illustration">
+            </div>
+        </div>
+        <div class="group-container">
+            <h2 class="group-title">Launch Website</h2>
+            <p class="group-description">Make web for the mini project</p>
+            <div class="seemore-button-container">
+                <a href="group-list.html"><button type="button" class="see-more-button">See More</button></a>
+                <img id="flower-illustration" src="../images/flower.png" alt="Flower illustration">
+            </div>
+        </div>
+        <div class="group-container">
+            <h2 class="group-title">Work</h2>
+            <p class="group-description">From my 9 to 5, not after</p>
+            <div class="seemore-button-container">
+                <a href="group-list.html"><button type="button" class="see-more-button">See More</button></a>
+                <img id="flower-illustration" src="../images/flower.png" alt="Flower illustration">
+            </div>
+        </div>
+        <div class="group-container">
+            <h2 class="group-title">Create Artwork</h2>
+            <p class="group-description">Make proposal for the artshow</p>
+            <div class="seemore-button-container">
+                <a href="group-list.html"><button type="button" class="see-more-button">See More</button></a>
+                <img id="flower-illustration" src="../images/flower.png" alt="Flower illustration">
+            </div>
+        </div>
+        <div class="group-container">
+            <h2 class="group-title">Learn Chinese</h2>
+            <p class="group-description">Step toward mastering new vocab</p>
+            <div class="seemore-button-container">
+                <a href="group-list.html"><button type="button" class="see-more-button">See More</button></a>
+                <img id="flower-illustration" src="../images/flower.png" alt="Flower illustration">
+            </div>
+        </div>
+    </section>
+
+    <section class="create-todo">
+        <form id="new-todo-form">
+            <input id="id-input-form" type="hidden">
+            <input id="task-form" type="text" placeholder="¿What are you working on?" name="task-form" required /><p id="msg-task-form"></p>
+            <input id="description-form" type="text" placeholder="Write a description" name="description-form"/>
+            <input id="due-date-form" type="date">
+            <button type="submit" id="add-todo"> Add To Do</button>
+        </form>
+    </section>
+
     <footer clas="basic-footer">
         <div class="footer-logo-container">
-            <img id="logo-footer" src="images/desktop-logo-footer.png" alt="Basic Logo for Footer">
+            <img id="logo-footer" src="../images/desktop-logo-footer.png" alt="Basic Logo for Footer">
         </div>
         <div class="footer-nav-container-general">
             <div class="footer-nav-container-left">
-                <a href="#"><img id="footer-menu-icon"src="images/icons/coffe-icon.png" alt="Today Icon"></a>
-                <a href="#"><img id="footer-menu-icon"src="images/icons/projects-icon.png" alt="Projects Icon"></a>
+                <a href="../index.html"><img id="footer-menu-icon"src="../images/icons/coffe-icon.png" alt="Today Icon"></a>
+                <a href="groups-display.html"><img id="footer-menu-icon"src="../images/icons/projects-icon.png" alt="Projects Icon"></a>
             </div>
             <div class="footer-nav-container-right">
-                <a href="#"><img id="footer-menu-icon"src="images/icons/garden-icon.png" alt="Garden Icon"></a>
-                <a href="#"><img id="footer-menu-icon"src="images/icons/face-icon.png" alt="User Icon"></a>
+                <a href="garden.html"><img id="footer-menu-icon"src="../images/icons/garden-icon.png" alt="Garden Icon"></a>
+                <a href="settings.html"><img id="footer-menu-icon"src="../images/icons/face-icon.png" alt="User Icon"></a>
             </div>
         </div>
     </footer>
-    <script src="javascript/script-main.js"></script>
+    <script src="../javascript/services.js"></script>
+    <script src="../javascript/menu.js"></script>
 </body>
 </html>

@@ -1,0 +1,96 @@
+@media only screen and (min-width: 500px) {
+    body {
+        background-image: url("../images/desktop-background-header-group.png");
+        background-repeat: no-repeat;
+        background-attachment: local;
+        background-size: cover;
+        background-position: center top;
+        color: var(--dark);
+    }
+    }
+    @media only screen and (max-width: 500px) {
+    body {
+            background-image: url("../images/background-project.jpg");
+            background-repeat: no-repeat;
+            background-attachment:local;
+            background-size: auto;
+            background-position: center top;
+            color: var(--dark);
+    }
+    }
+.group-header{
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 1.5rem;
+    font-family: "Work Sans";
+}
+.group-display-container{
+    display: block;
+    font-family: "Work Sans";
+	border-radius: 0.625rem;
+	background-color: #3B0F52;
+	margin: 1rem;
+    padding: 1rem;
+	height: max-content;
+}
+.group-quote{
+    color: #FFF;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 700;
+}
+#image-illustration{
+    width: 10rem;
+    height: 10rem;
+    margin-bottom: -3rem;
+    margin-top: 4rem;
+    margin-right: 1rem;
+}
+#group-information{
+    display: block;
+}
+.group-task{
+    color: #FFF;
+    font-size: 0.8125rem;
+    font-style: italic;
+    font-weight: 300;
+    line-height: 170%;
+    letter-spacing: 0.0813rem;
+}
+.group-title{
+    color: #FFF;
+    font-size: 1.375rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 170%; 
+    letter-spacing: 0.01375rem;
+}
+.group-description{
+    color: #FFF;
+    font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 170%;
+    letter-spacing: 0.00938rem;
+}
+
+#group-duedate-icons{
+    display: flex;
+    gap: 1rem;
+}
+.group-duedate{
+    border-radius: 0.3125rem;
+    background: #FAD430;
+    color: #3B0F52;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    padding: 0.3rem 0.5rem;
+}
+#group-edit-icon, #group-delete-icon{
+    border-radius: 0.3125rem;
+    background: #FAD430;
+    width: 1.8rem;
+    height: 1.8rem;
+    padding: 0.5rem;
+}

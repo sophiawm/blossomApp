@@ -35,21 +35,21 @@ body {
 	background-image: url("../images/desktop-background-header-home.png");
 	background-repeat: no-repeat;
 	background-attachment: local;
-	background-size: contain;
+	background-size: cover;
 	background-position: center top;
 	color: var(--dark);
 }
 }
 @media only screen and (max-width: 500px) {
-	body {
+body {
 		background-image: url("../images/mobile-background-header-home.png");
 		background-repeat: no-repeat;
 		background-attachment:initial;
 		background-size: auto;
 		background-position: center top;
 		color: var(--dark);
-	}
-	}
+}
+}
 
 /* Header */
 .basic-header{

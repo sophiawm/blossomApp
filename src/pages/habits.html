@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/style-index-main.css">
-    <link rel="stylesheet" href="../styles/style-habits.css">
+    <link rel="stylesheet" href="../styles/style-group-list.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -16,19 +16,34 @@
             <p>Hello, </p><p class="name-user-welcome">Sunshine</p>
         </div>
         <div class="nav-container" class="dropdown">
-            <button onclick="dropdownMenu()" class="dropbtn"><img src="images/icons/toggle-icon.png" alt="Toggle Icon"></button>
+            <button onclick="dropdownMenu()" class="dropbtn"><img src="../images/icons/toggle-icon.png" alt="Toggle Icon"></button>
             <ul id="myDropdown" class="dropdown-content">
-                <li><a href="../index-main.html">Today's Taks</a></li>
+                <li><a href="../index.html">Today's Taks</a></li>
                 <li><a href="groups-display.html">Groups</a></li>
                 <li><a href="habits.html">Habits</a></l>
                 <li><a href="garden.html">The Garden</a></li>
-                <li><a href="setting.html">Setting</a></li>
+                <li><a href="settings.html">Setting</a></li>
             </ul>
         </div>
     </header>
-    
-    <section class="todo-list-habits">
-        <h3 class="todays-title">Habits</h3>
+
+        <div class="group-header">
+            <p class="group-quote">Break it down,</br>take it easy</p>
+            <img  id="image-illustration" src="../images/activities-24.png" alt="group-illustration">
+        </div>
+        <section class="group-display-container">
+        <div id="group-information">
+            <p class="group-task">10 task</p>
+            <h3 class="group-title">Website launch</h3>
+            <p class="group-description">Make web for the mini project</p>
+        </div>
+        <div id="group-duedate-icons"> 
+            <p class="group-duedate">Due: 31/08</p>
+            <img id="group-edit-icon" src="../images/icons/edit-icon.png" alt="edit-icon">
+            <img id="group-delete-icon" src="../images/icons/delete-icon.png" alt="delete-icon">
+        </div>
+    </section>
+    <section class="todo-list-group">
         <div id="list-container">
             <div class="list-item-container">
                 <div id="list-box-structure">
@@ -37,18 +52,55 @@
                         <input type="checkbox" class="taskCheckbox">
                         <span class="checkmark"></span>
                     </label>
-                        <h4 id="task-item-text">${task.text}</h4>
+                        <h4 id="task-item-text">Design logo</h4>
                     </div>
-                    <p id="description-item-text">${task.description}</p>
+                    <p id="description-item-text">Make logo for the mini project</p>
                     <div class="task-group-duedate">
-                        <p id="group-task-item">${task.group}</p>
-                        <p id="due-date-item">${task.dueDate}</p>
+                        <p id="due-date-item">18/08 to 31/08</p>
                     </div>
                 </div>
                 <div id="todo-line-icons"> 
-                    <img id="edit-icon" src="images/icons/edit-icon.png" alt="edit-icon">
-                    <img  id="delete-icon" src="images/icons/delete-icon.png" alt="delete-icon">
+                    <img id="edit-icon" src="../images/icons/edit-icon.png" alt="edit-icon">
+                    <img  id="delete-icon" src="../images/icons/delete-icon.png" alt="delete-icon">
                 </div>
+            </div>
+        </div>
+        <div class="list-item-container">
+            <div id="list-box-structure">
+                <div id="todo-first-line">
+                <label class="checkbox-container">
+                    <input type="checkbox" class="taskCheckbox">
+                    <span class="checkmark"></span>
+                </label>
+                    <h4 id="task-item-text">Make wireframes</h4>
+                </div>
+                <p id="description-item-text">Create the wireframe for the mini project</p>
+                <div class="task-group-duedate">
+                    <p id="due-date-item">18/08 to 31/08</p>
+                </div>
+            </div>
+            <div id="todo-line-icons"> 
+                <img id="edit-icon" src="../images/icons/edit-icon.png" alt="edit-icon">
+                <img  id="delete-icon" src="../images/icons/delete-icon.png" alt="delete-icon">
+            </div>
+        </div>
+        <div class="list-item-container">
+            <div id="list-box-structure">
+                <div id="todo-first-line">
+                <label class="checkbox-container">
+                    <input type="checkbox" class="taskCheckbox">
+                    <span class="checkmark"></span>
+                </label>
+                    <h4 id="task-item-text">Create final prototype</h4>
+                </div>
+                <p id="description-item-text">Make the prototype for the mini project</p>
+                <div class="task-group-duedate">
+                    <p id="due-date-item">18/08 to 31/08</p>
+                </div>
+            </div>
+            <div id="todo-line-icons"> 
+                <img id="edit-icon" src="../images/icons/edit-icon.png" alt="edit-icon">
+                <img  id="delete-icon" src="../images/icons/delete-icon.png" alt="delete-icon">
             </div>
         </div>
     </section>
@@ -59,16 +111,16 @@
         </div>
         <div class="footer-nav-container-general">
             <div class="footer-nav-container-left">
-                <a href="../index-main.html"><img id="footer-menu-icon"src="../images/icons/coffe-icon.png" alt="Today Icon"></a>
+                <a href="../index.html"><img id="footer-menu-icon"src="../images/icons/coffe-icon.png" alt="Today Icon"></a>
                 <a href="groups-display.html"><img id="footer-menu-icon"src="../images/icons/projects-icon.png" alt="Projects Icon"></a>
             </div>
             <div class="footer-nav-container-right">
                 <a href="garden.html"><img id="footer-menu-icon"src="../images/icons/garden-icon.png" alt="Garden Icon"></a>
-                <a href="setting.html"><img id="footer-menu-icon"src="../images/icons/face-icon.png" alt="User Icon"></a>
+                <a href="settings.html"><img id="footer-menu-icon"src="../images/icons/face-icon.png" alt="User Icon"></a>
             </div>
         </div>
     </footer>
-    <script src="javascript/services.js"></script>
-    <script src="javascript/menu.js"></script>
+    <script src="../javascript/services.js"></script>
+    <script src="../javascript/menu.js"></script>
 </body>
 </html>
