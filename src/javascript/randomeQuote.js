@@ -16,13 +16,13 @@ const generateQuote = function() {
         quote: "You are always worthy",
     },
     {
-        quote: "Blame the system",
+        quote: "Just blame the system",
     },
     {
         quote: "Show up with empathy",
     },
     {
-        quote: "Embrace the chaos",
+        quote: "Embrace the chaos and flow",
     }
 ];
 
