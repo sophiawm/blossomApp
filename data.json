@@ -2,6 +2,22 @@
   "tasks": [
     {
       "completed": false,
+      "text": "Create Artwork",
+      "description": "Make proposal for the artshow",
+      "dueDate": "2023-08-17",
+      "group": "Work",
+      "id": 3
+    },
+    {
+      "completed": false,
+      "text": "Work Out for 15 min",
+      "description": "Jump the rope and run",
+      "dueDate": "2023-08-17",
+      "group": "Habits",
+      "id": 4
+    },
+    {
+      "completed": false,
       "text": "Organize and clean",
       "description": "Organize and put things away",
       "dueDate": "2023-08-17",
@@ -23,14 +39,14 @@
       "dueDate": "2023-08-24",
       "group": "Habits",
       "id": 7
-    },    
+    },
     {
       "completed": false,
-      "text": "Read 2 research papers",
+      "text": "Read two research papers",
       "description": "Avance project",
       "dueDate": "2023-08-24",
       "group": "Work",
-      "id": 7
+      "id": 8
     }
   ],
   "groups": [
