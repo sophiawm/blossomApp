@@ -2,7 +2,7 @@
   "tasks": [
     {
       "completed": false,
-      "text": "Organizar",
+      "text": "Organize and clean",
       "description": "Organize and put things away",
       "dueDate": "2023-08-17",
       "group": "Organize Homework",
@@ -15,6 +15,22 @@
       "dueDate": "2023-08-23",
       "group": "Organize Homework",
       "id": 6
+    },
+    {
+      "completed": false,
+      "text": "Meditate",
+      "description": "Listen to guided audio",
+      "dueDate": "2023-08-24",
+      "group": "Habits",
+      "id": 7
+    },    
+    {
+      "completed": false,
+      "text": "Read 2 research papers",
+      "description": "Avance project",
+      "dueDate": "2023-08-24",
+      "group": "Work",
+      "id": 7
     }
   ],
   "groups": [
